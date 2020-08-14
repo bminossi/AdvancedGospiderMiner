@@ -2,6 +2,8 @@
 #### Onde tiver twitch.tv, susbtitua pelo seu
 
 ## Começando spiders usando uma lista de urls vivas (listaUrlsParaSpider)
+#### Isso vai demorar bastante e não exibirá nada na tela (a fim de aumentar a performance).
+#### Você pode acompanhar o progresso vendo o arquivo por outro termianal usando um tail -f spider
 ```
 gospider -c 10 -t 25 -S listaUrlsParaSpider -d 4 -a | sort -u  > spider
 ```
