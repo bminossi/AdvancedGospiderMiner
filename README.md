@@ -3,7 +3,7 @@
 
 ## Começando spiders usando uma lista de urls vivas (listaUrlsParaSpider)
 ```
-gospider -S listaUrlsParaSpider -d 4 -a | sort -u  > spider
+gospider -c 10 -t 25 -S listaUrlsParaSpider -d 4 -a | sort -u  > spider
 ```
 ## Manipulando saída da Gospider para extrair JS
 
