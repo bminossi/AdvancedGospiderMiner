@@ -16,7 +16,8 @@ cat spider | grep js | rev | cut -d " " -f1 | rev | grep twitch.tv  >> spiderUni
 ```
 cat spiderUnique* | sort -u > spiderAllSorted
 ```
-## Realizando curl para cada JS da lista recem feita. Como resultado, consultaremos variaveis interessantes dentro de todos em poucos segundos.
+## Realizando curl para cada JS da lista recem feita
+## Como resultado, depois consultaremos variaveis interessantes dentro de todos em poucos segundos.
 
 ```
 xargs -P20 -a spiderAllSorted -I 'FUZZ' sh -c 'echo "\nURLALVO\n" >> allContentsFuzzSpider;curl -L -sf FUZZ 2>/dev/null >> allContentsFuzzSpider'
