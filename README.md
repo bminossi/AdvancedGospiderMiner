@@ -38,3 +38,9 @@ localhost
 ```
 xargs -P10 -a filterWordsMatch -I 'FUZZ' sh -c 'egrep -o ".{1,20}FUZZ.{1,20}" allContentsFuzzSpider | grep -i --color FUZZ'
 ```
+
+## Como aprimorar leitura de js
+### Instale o jsbeautifier
+```
+pip install jsbeautifier
+```
