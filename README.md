@@ -22,7 +22,7 @@ cat spiderUnique* | sort -u > spiderAllSorted
 ## Como resultado, depois consultaremos variaveis interessantes dentro de todos em poucos segundos.
 
 ```
-xargs -P20 -a spiderAllSorted -I 'FUZZ' sh -c 'echo "\nURLALVO\n" >> allContentsFuzzSpider;curl -L -sf FUZZ 2>/dev/null >> allContentsFuzzSpider'
+xargs -P20 -a spiderAllSorted -I 'FUZZ' sh -c 'echo "\nURLALVO FUZZ\n" >> allContentsFuzzSpider;curl -L -sf FUZZ 2>/dev/null >> allContentsFuzzSpider'
 ```
 
 ## Para buscar dentro dos resultados obtidos
